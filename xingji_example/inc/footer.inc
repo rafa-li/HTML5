@@ -1,0 +1,1 @@
+<script id="gfooter" src="http://ossweb-img.qq.com/images/sy/template2014/js/foot.js?t=2"></script>

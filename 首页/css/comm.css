@@ -1,0 +1,260 @@
+/* css reset */
+body,dl,dt,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0;margin:0;}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+a,a:hover,a:visited {text-decoration:none;color:#000;}
+
+.hid {display:none;font-size:0;line-height:0;}
+.clear {clear:both;}
+/* 布局元素 */
+body {font:normal 12px/1.6em "microsoft yahei",simsun,Tahoma,sans-serif;color:#000;padding-top:42px;}
+.wrap {width:100%;min-width:1000px;_width:1000px;}
+.header {position:relative;width:100%;z-index:10;}
+.center {position:relative;width:1000px;height:100%;margin:0 auto;}
+
+.fl,.f-left {float:left;display:inline;}
+.fr,.f-right {float:right;display:inline;}
+
+/* -导航- */
+.nav {position:absolute;width:100%;height:86px;z-index:100;}/*高度，背景色可调整*/
+.game-info {position:relative;float:left;padding-left:140px;height:100%;color:#fff;}
+.nav-logo {position:absolute;left:0;top:10px;z-index:99;}
+.game-info h2 {margin:20px 0 10px;font-size:26px;}
+.game-desc {display:none;position:absolute;top:100%;left:140px;padding:20px;width:350px;height:67px;background:#000;color:#86ddf0;}
+.game-desc-swit:hover .game-desc {display:block;}
+.game-desc-swit {padding:10px 0;}
+.game-desc-swit span {background:#86ddf0;padding:1px 5px;border-radius:8px;}
+.nav-list {height:100%;    margin-left: 18px;}
+.nav-list li{float:left;height:100%;}
+.nav-list li.cur a{
+    background: url("../images/spr.png") -200px -172px no-repeat;
+}
+
+.nav-list a {display:block;height:100%;width:103px;text-align:center;font-size:16px;color:#86ddf0;line-height: 86px}
+.nav-list a:hover { background: url("../images/spr.png") -208px -172px no-repeat;}/* hover时背景和边框颜色 */
+
+/*微信公众号&部落*/
+.wechat,.buluo{height:55px;color:#a1a1a1;position:relative; margin-top: 16px; }
+.wechat .highline{color:#73c33d}
+.wechat-ac{display:block;width:52px;padding:0 14px;height:52px;position:relative;cursor:pointer;}
+.wechat-ac-icon,.buluo-ac-icon{    background: url(../images/spr.png) no-repeat -322px -2px;; width: 52px; height: 52px;display:block;}
+.buluo-ac-icon{background-position:-322px -2px;}
+.wechat-ac-data{line-height:15px;font-size:12px;padding:0 15px 0 10px;}
+.wechat-ac-data h6{font-weight:normal;height:15px;max-width:110px;overflow:hidden}
+.wechat:hover .wechat-hover,.buluo:hover .wechat-hover{display:block}
+.wechat-hover{position:absolute;width:380px;background:#1E1E1E;top:66px;right:0;padding:35px;display:none;}
+.wechat-hover .media-body{padding-top:25px; padding-left: 161px;}
+.wechat-hover .pop-title{font-size:16px;_font-size:15px;;padding-bottom:10px}
+.hd_news a:hover{color:#ff0;}
+
+/*foot-info*/
+.copyright{padding-top:18px;height:54px;color:#9a9a9a}
+.cptxt{float:right;padding-right:23px;padding-top:10px; color: #4A4A4A; font-size: 12px;}
+.foot-cpright{overflow:hidden;min-width:880px;padding:20px 60px;zoom:1;background:#000;}
+.foot-sprt{margin:0 2px;_margin:0 0}
+.foot-logos-game{display: inline-block;width:180px;height:35px;text-indent:-999em;overflow:hidden;margin:10px 0 0 10px;background:url(http://ossweb-img.qq.com/images/sy/template2014/foot-dark.png);}
+.foot-links,.foot-links a {color:#4A4A4A; font-size: 12px;}
+.foot-info{padding:50px 0;letter-spacing: -4px;word-spacing: -4px;font-size:0;}
+.foot-info li{display:inline-block;*display:inline;zoom:1;vertical-align:top;letter-spacing: normal;word-spacing: normal;font-size:14px}
+.foot-info .gzweixin{width:255px;padding-right:60px}
+.foot-info .tips{width:325px;padding-right:60px}
+.foot-info .coop{width:260px;}
+.foot-info .coop-list li{display:block;}
+
+/*游戏特色背景*/
+.yxts-bg{background: url("../images/yxts-bg.jpg") center top no-repeat;height: 1323px;}
+.yxts-kv{background: url("../images/yxts-hed.jpg") center top no-repeat;height: 679px;}
+
+
+.hd .title {
+    display: block;
+    overflow: hidden;
+    width: 820px;
+    font: 500 26px/1.5 '\5FAE\8F6F\96C5\9ED1',tahoma;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #86ddf0;
+}
+
+.hd .info {
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
+
+.hd {
+    padding: 22px 0;
+    border-bottom: solid 1px #dddbd9;
+}
+.context {
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+}
+.context {
+    color: #ffffff;
+    padding: 20px 0;
+    min-height: 600px;
+}
+
+.dia-con{
+    float: left;
+}
+.dia-close{
+    width: 70px;
+    height: 70px;
+    /* background: red; */
+    /* float: right; */
+    /* top: 0; */
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    text-indent: -999rem;
+}
+.guid{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+.page.next,.page.prev{
+    border: solid 2px #58fdff;
+    border-radius: 16px;
+    color: #58fdff;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    *display: inline;
+    *zoom: 1;
+    margin: 50px 20px;
+}
+.page:hover{
+    opacity: .8;
+}
+
+
+
+/* 栅格模块框架 */
+.grid {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.grid .tit {
+    height: 60px;
+    margin: 20px 0;
+    font-size: 48px;
+    color: #393939;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.grid-hd {
+    width: 100%;
+    height: 60px;
+    background: #E8E8E8;
+}
+
+.grid-hd h3 {
+    line-height: 60px;
+    font-size: 24px;
+    text-indent: 25px
+}
+
+.grid-col {
+    float: left;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid-right {
+    float: right;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid-border {
+    border: 1px solid #E3E3E3;
+}
+
+.grid-col-5 {
+    width: 49%;
+}
+
+.grid-col-4 {
+    width: 40%;
+}
+
+.grid-col-6 {
+    width: 60%;
+}
+
+.grid-side-ad {
+    display: block;
+    margin: 25px 0 0 20px;
+}
+
+.grid-tab-hd {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: solid 1px #ccc;
+}
+
+.grid-tab-hd li {
+    float: left;
+    width: 49%;
+    line-height: 60px;
+    height: 57px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid-tab-hd .on {
+    border-bottom: solid 3px #000;
+}
+
+.grid-tab-bd .col-news {
+    display: none;
+}
+
+.grid-tab-bd .dis {
+    display: block;
+}
+
+/* 栅格内新闻默认样式 */
+.col-news {
+    padding: 15px 25px 25px;
+    font-size: 14px;
+}
+
+.col-news li {
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px dotted #9a9a9a;
+    color: #ffffff
+}
+
+.col-news a {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+}
+
+.col-news .time {
+    float: right;
+}

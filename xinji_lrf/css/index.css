@@ -123,22 +123,24 @@ li{
 
 .we-chat{
 	display: block;
-	width: 103px;
-	height: 86px;
+	width: 80px;
+	height: 52px;
+	padding-top: 17px;
 	float: right;
 	position: relative;
 /*	background: red;*/
 }
-.we-chat .we-chat-log{
+.we-chat .we-chat-logo{
 	display: block;
 	width: 52px;
 	height: 52px;
-	background: url("../images/spr.png") no-repeat -322px -2px;;
+	background: url("../images/spr.png") no-repeat -322px -2px;
 }
 .we-chat .we-chat-log span{
 	display: block;
 	width: 52px;
 	height: 52px;
+
 }
 
 .we-chat .we-chat-hover{
@@ -264,18 +266,19 @@ li{
 
 .yxzx{
 	width: 100%;
-	height: 1000px;
+	height: 707px;
 	background: url("../images/bg-03.jpg") center top no-repeat;
 }
 .yxzx .center{
+	position: relative;
+	top: 150px;
 	display: block;
 	width: 1000px;
-	height: 90px;
+	height:707px;
 	margin: 0 auto;
-	padding-top: 150px; 
+/*	padding-top: 150px;*/
 /*	background: #eee;*/
 }
-
 .tab-hd ul{
 	width: 100%;
 	height: 93px;
@@ -298,9 +301,76 @@ li{
 	color: #fff;	
 	font-family: "Microsoft YaHei";
 }
-.tab-hd li:hover{
+.tab-hd .lihover{
 	border-bottom: 4px solid #58fdff;
 }
-.tab-hd li:hover a{
+.tab-hd .lihover a{
 	color: #58fdff;
+}
+
+.tab-td .col-news{
+	display: none;
+}
+.tab-td .dis{
+	display: block;
+}
+.tab-td ul{
+	display: block;
+	padding-top: 10px;
+}
+.tab-td li{
+	height: 55px;
+	line-height: 55px;
+	border-bottom: 1px dotted #9a9a9a;
+}
+.tab-td li a{
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #fff;
+}
+.tab-td li a:hover{
+	color: #58fdff;
+}
+.tab-td .time{
+	display: block;
+	color: #fff;
+	float: right;
+}
+.tab-td .more{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #58fdff;
+	border: 2px solid #58fdff;
+	border-radius: 16px;
+	text-align: center;
+	position: relative;
+	top: 20px;
+	float: right;
+}
+.tab-td .more:hover{
+	color: #00AEAE;
+	border-color: #00AEAE;
+}
+
+.hzmt{
+	width: 100%;
+	height: 392px;
+	background: url("../images/bg-04.jpg") center top no-repeat;
+}
+.hzmt .center{
+	width: 1000px;
+	height: 150px;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center;
+}
+.hzmt .center li{
+	width: 250px;
+	height: 55px;
+	float: left;
 }

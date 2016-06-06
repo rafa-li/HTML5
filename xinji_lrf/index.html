@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/index.css">
+	<script type="text/javascript" src="./js/jquery-2.2.0.js"></script>
 	<title>星际火线首页</title>
 </head>
 <body>
@@ -113,10 +114,10 @@
 	<div class="center">
 		<div class="tab-hd">
 			<ul>
-				<li class="hd-item lihover"><a href="###">最新资讯</a></li>
-				<li class="hd-item"><a href="###">热门活动</a></li>
-				<li class="hd-item"><a href="###">新闻公告</a></li>
-				<li class="hd-item"><a href="###">游戏攻略</a></li>
+				<li class="lihover"><a href="###">最新资讯</a></li>
+				<li class=""><a href="###">热门活动</a></li>
+				<li class=""><a href="###">新闻公告</a></li>
+				<li class=""><a href="###">游戏攻略</a></li>
 			</ul>
 		</div>
 		<div class="tab-td">
@@ -171,23 +172,24 @@
 		</div>
 	</div>
 
-	<script type="text/javascript";>
+	<script type="text/javascript">
 		window.onload=function () {
-			var hd_li=document.getElementsByClassName('hd-item');				
+			var hd_li = $(".tab-hd").find('li');				
+			
+			
 			for(i=0;i<hd_li.length;i++){						
 				hd_li[i].onmouseover=function() {
-					var A=this.className;
-					
-					console.log(A);
-					if (A.indexOf("lihover")<0) {
-						console.log(A.indexOf("lihover"));
-						this.className+=" lihover";
-					}
+					$(".tab-hd ul li").removeClass();
+					this.className = "lihover";
+					var hd_ll=[];
+					var hd_ll=$(".hd_td").find('col-news');
+					$(".hd_td div").removeClass(' dis');
+					hd_ll[i].className+=' dis';
 				}
-
 			}
 		}
 	</script>
+</div>
 
 <!-- 合作媒体 -->
 <div class="hzmt">
@@ -201,6 +203,6 @@
 	</div>
 	
 </div>
-</div>
+
 </body>
 </html>

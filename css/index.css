@@ -88,6 +88,9 @@
 	letter-spacing: 1px;
 	line-height: 1.5;
 }
+#tour .info{
+	padding: 5px 0 0 0;
+}
 #tour .title{
 	color: #333;
 	font-weight: normal;

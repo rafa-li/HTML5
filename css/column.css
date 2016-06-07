@@ -25,21 +25,199 @@
 }
 #container{
 	width: 1263px;
-	height: 1200px;
+	height: 2380px;
 	margin: 30px auto;
+	position: relative;
 }
 #container .sidebar{
 	width: 340px;
 	height: 1200px;
-/*	background-color: #eee;*/
 	float: right;
 }
 #container .list{
-	width: 900px;
+	width: 910px;
 	height: 900px;
-	background-color: #ccc;
+/*	background-color: #ccc;*/
 	float: left;	
 }
+#container .list .infor{
+	height: 45px;
+	line-height: 45px;
+	background-color: #eee;
+	margin: 0 0 20px 0;
+}
+#container .tour{
+	position: relative;
+	height: 230px;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+}
+#container .tour img{
+	float: left;
+}
+#container .tour figcaption{
+	width: 528px;
+	height: 230px;
+	float: right;
+}
+#container .tour hgroup{
+	width: 300px;
+}
+#container .tour h2{
+	font-size: 24px;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+	color: #333;
+	width: 400px;
+}
+#container .tour h3{
+	font-size: 16px;
+	padding: 10px 0 10px 25px;
+	line-height: 1.5;
+	font-weight: normal;
+	color: #666;
+}
+#container .tour ol{
+	padding: 0 0 0 25px;
+	color: #666;
+	line-height: 2;
+}
+#container .tour mark{
+	padding: 0 5px;
+	border-radius: 4px;
+	color: #458B00;
+	border: 1px solid #458B00;
+	background-color: #fff;
+}
+#container .tour .buy{
+	position: absolute;
+	top: 55px;
+	right: 30px;
+}
+#container .tour s{
+	font-size: 16px;
+	color: #999;
+}
+#container .tour .price{
+	font-size: 20px;
+	color: #f60;
+}
+#container .tour strong{
+	font-size: 36px;
+}
+#container .tour .reserve{
+	margin: 10px 0 0 0;
+}
+#container .tour .reserve a{
+	display: inline-block;
+	width: 152px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	background-color: #f60;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+#container .tour .type{
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-bottom-right-radius: 4px;
+	background-color: #59b200;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#container .tour .disc{
+	width: 52px;
+	height: 52px;
+	background: url("../img/disc.png") no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#container .tour .disc span{
+	width: 52px;
+	height: 52px;
+	display: block;
+	font-size: 14px;
+	color: #ff7a4d;
+	transform: rotate(45deg);
+	text-indent: 7px;
+	padding: 5px 0 0 0;
+}
+#container .tour footer{
+	width: 528px;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 25px;
+	color: #666;
+	position: absolute;
+	bottom: 0;
+	background-color: #fafafa;
+	letter-spacing: 1px;
+}
+#container .tour time{
+	color: #458B00;
+}
+#container .list .more{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	font-size: 18px;
+	margin: 0 auto;
+	cursor: pointer;
+	background-color: #fafafa;
+}
+#container .left{
+	display: inline-block;
+	float: left;
+}
+#container .left li{
+	display: inline-block;
+	width: 150px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;	
+}
+#container .left li:first-child{
+	background-color: #fff;
+	border-top: 2px solid #458B00;
+	position: relative;
+	left:1px;
+}
+#container .left li a{
+	color: #666;
+}
+#container .right{
+	display: inline-block;
+	float: right;
+	padding: 0 20px 0 0;
+}
+#container .right li{
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+#container .right a{
+	padding: 3px 8px;
+	color: #666;
+}
+#container .right a.selected, .right a:hover{
+	background-color: #458B00;
+	color: #FFF;
+}
+
 #container .sidebox{
 	border: 1px solid #eee;
 	margin: 0 0 10px 0;
@@ -59,7 +237,7 @@
 #container .tag{
 	padding: 10px 0;
 }
-#container .tag a{
+#container .tag li{
 	display: inline-block;
 	margin: 2px 0;
 	width: 100px;
@@ -70,8 +248,11 @@
 	text-align: left;
 	text-indent: 8px;
 }
+#container .tag a{
+	display: block;
+}
 #container .tag a:hover{
-	background-color: #458b00;
+	background-color: #a6a6a6;
 	color: #fff;
 }
 #container .figure{
@@ -108,3 +289,4 @@
 #container .box a.trea4 {
 	background: #eee url(../img/trea4.png) no-repeat 10px center;
 }
+

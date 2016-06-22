@@ -1,0 +1,20 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+
+.box{
+	width: 1190px;
+	height: 2400px;
+	margin: 20px auto 0;
+}
+#btn{
+	display: none;
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	left: 90%;
+	bottom: 30px;
+	background: url("../img/top_bg2.png") no-repeat center;
+}

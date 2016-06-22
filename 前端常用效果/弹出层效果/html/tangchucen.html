@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/tangchucen.css">
+<!-- 	<script type="text/javascript" src="../js/tangchucen.js"></script> -->
+	<title>弹出层效果</title>
+</head>
+<body>
+	<div class="header">
+		<div class="container" id="nav">
+			<h1 id="logo"><a href="###">hello旅行社</a></h1>
+			<ul>
+				<li><a href="###">课程</a></li>
+			</ul>
+		<div id="login-area">
+			<button id="btnLogin" hidefocus="true" class="login-btn" onclick="login()">登录</button>
+		</div>
+		</div>
+
+	</div>
+	<div id="mask"></div>
+	<div id="login" style="display: none">
+		<div class="wrapper">
+		<form action="" method="post" >
+		<div class="loginBox">
+			<div class="loginBoxCenter">
+				<p><label for="username">电子邮箱：</label></p>
+				<p><input type="text" id="e_mail" name="email" class="loginInput" autofocus="autofocus"   placeholder="请输入电子邮箱"  /></p>
+				<p><label for="password">密码：</label>
+				<a class="forgetLink" href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account">忘记密码？</a></p>
+				<p><input type="password" id="pass_word" name="password" class="loginInput"  placeholder="请输入密码"  />
+				<a class="forgetLink" href="http://zc.qq.com/chs/index.html?type=1">我要注册！</a></p>
+			</div>
+			<div class="loginBoxButtons">
+				<input id="remember" type="checkbox" name="remember" />
+				<label for="remember">记住登录状态</label>
+				<button class="loginBtn" >登录</button>
+			</div>
+		</div>
+		</form>
+	</div>
+	</div>
+<script type='text/javascript'>
+	function login() {
+		var loginbox = document.getElementById('login');
+		var mask = document.getElementById('mask');
+		loginbox.style.display = 'block';
+		mask.style.display = 'block';
+	}
+
+
+</script>
+</body>
+</html>

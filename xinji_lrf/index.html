@@ -1,208 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./css/index.css">
-	<script type="text/javascript" src="./js/jquery-2.2.0.js"></script>
-	<title>星际火线首页</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/jquery-2.2.0.js"></script>
+    <title>星际火线首页</title>
 </head>
+
 <body>
-<!-- header头部 -->
-	<div class="header">
-
-		<div class="nav">
-			<div class="logo-info">
-				<a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
-				<h2>星际火线</h2>
-				<p>星际\射击\动作</p>
-				<a href="###" class="game-desc-swit">
-					<span>游戏介绍</span>
-					<div class="game-desc">
-					《星际火线》是一款3D动作射击手游。次时代3D，呈现震撼未来战场；三枪一体，成就无敌枪械大师；独创飞翼，带你穿越星际；现已开启革新测试，超多游戏内容不容错过
+    <!-- header头部 -->
+    <div class="header">
+        <div class="nav">
+            <div class="logo-info">
+                <a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+                <h2>星际火线</h2>
+                <p>星际\射击\动作</p>
+                <a href="###" class="game-desc-swit">
+                    <span>游戏介绍</span>
+                    <div class="game-desc">
+                        《星际火线》是一款3D动作射击手游。次时代3D，呈现震撼未来战场；三枪一体，成就无敌枪械大师；独创飞翼，带你穿越星际；现已开启革新测试，超多游戏内容不容错过
                     </div>
-				</a>
-			</div>
-			<div class="nav-list">
-				<ul>
-					<li><a href="###">官网首页</a></li>
-					<li><a href="###">活动资讯</a></li>
-					<li><a href="###">游戏攻略</a></li>
-					<li><a href="###">游戏论坛</a></li>
-					<li><a href="###">游戏图库</a></li>
-					<li><a href="###">礼包兑换</a></li>
-				</ul>
-			</div>
-			<div class="we-chat">
-				<div class="we-chat-logo">
-					<span></span>
-				</div>
-				<div class="we-chat-hover">
-					微信推广
-				</div>
-			</div>
-			<div class="button-yuyue">
-				<a href="###"></a>
-			</div>
-		</div>
-	</div>
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="###">官网首页</a></li>
+                    <li><a href="###">活动资讯</a></li>
+                    <li><a href="###">游戏攻略</a></li>
+                    <li><a href="###">游戏论坛</a></li>
+                    <li><a href="###">游戏图库</a></li>
+                    <li><a href="###">礼包兑换</a></li>
+                </ul>
+            </div>
+            <div class="we-chat">
+                <div class="we-chat-logo">
+                    <span></span>
+                </div>
+                <div class="we-chat-hover">
+                    微信推广
+                </div>
+            </div>
+            <div class="button-yuyue">
+                <a href="###"></a>
+            </div>
+        </div>
+    </div>
+    <!-- news新闻列表 -->
+    <div class="news">
+        <div class="news-center">
+            <div class="rolling-pic">
+                <script src="./js/rolling-pic.js"></script>
+                <script language="javascript">
+                var da = [];
 
-<!-- news新闻列表 -->
-	<div class="news">
-		<div class="news-center">
-			<div class="rolling-pic">
-			<script src="./js/rolling-pic.js"></script>
-					<script language="javascript" >
-						var da=[];
-	
-						da.push({src:"http://ossweb-img.qq.com/upload/adw/	image/201605/1462987973205207269.jpg",name:"第一张",link:"http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"});	
-						da.push({src:"http://ossweb-img.qq.com/upload/adw/	image/201604/1461546672065798994.jpg",name:"第二张",link:"http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"});	
-						da.push({src:"http://ossweb-img.qq.com/upload/adw/	image/201605/1462427107982382537.jpg",name:"第三张",link:"http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"});	
-	
-						var c={
-		 					bg:"#333",//右下数字背景颜色
-		 					color:"#FFF",//右下数字颜色
-		 					cbg:"#FFF",//右下当前数字背景颜色
-		 					ccolor:"#333",//右下当前数字颜色
-		 					bc:"#ccc",//边框颜色
-		 					step:6000 //步长
-							}
-						new IMGS("TopI",457,212,da,c);
-					//new IMGS("id号随便写不要和页面的id重复就可以",宽度,高度,数据[,设置]);
-					</script>	
-				</div>
-				<div class="news-list">
-					<ul>
-						<li>
-							<span class="news-list-time">2015-5-4</span>
-							<a href="###">【XXX】这是标题<span class="iconx icon-new"></span></a>
-						</li>
-						<li>
-							<span class="news-list-time">2015-5-4</span>
-							<a href="###" title="【XXX】这是标题很长很长很长长很长很长长很长很长很长很长很长的标题">【XXX】这是标题很长很长很长长很长很长长很长很长很长很长很长的标题</a>
-						</li>
-						<li>
-							<span class="news-list-time">2015-5-4</span>
-							<a href="###">【XXX】这是标题<span class="iconx icon-hot"></span></a>
-						</li>
-						<li>
-							<span class="news-list-time">2015-5-4</span>
-							<a href="###">【XXX】这是标题</a>
-						</li>
-						<li>
-							<span class="news-list-time">2015-5-4</span>
-							<a href="###">【XXX】这是标题</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-	</div>
+                da.push({
+                    src: "http://ossweb-img.qq.com/upload/adw/	image/201605/1462987973205207269.jpg",
+                    name: "第一张",
+                    link: "http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"
+                });
+                da.push({
+                    src: "http://ossweb-img.qq.com/upload/adw/	image/201604/1461546672065798994.jpg",
+                    name: "第二张",
+                    link: "http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"
+                });
+                da.push({
+                    src: "http://ossweb-img.qq.com/upload/adw/	image/201605/1462427107982382537.jpg",
+                    name: "第三张",
+                    link: "http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"
+                });
 
-<!-- 游戏特色 -->
-<div class="yxts">
-	<div class="center">
-		<ul>
-			<li><a href="###"><img src="./images/01.png" alt="ts-logo"></a></li>
-			<li><a href="###"><img src="./images/02.png" alt="ts-logo"></a></li>
-			<li><a href="###"><img src="./images/03.png" alt="ts-logo"></a></li>
-			<li><a href="###"><img src="./images/04.png" alt="ts-logo"></a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- 游戏资讯 -->
-<div class="yxzx">
-	<div class="center">
-		<div class="tab-hd">
-			<ul>
-				<li class="lihover"><a href="###">最新资讯</a></li>
-				<li class=""><a href="###">热门活动</a></li>
-				<li class=""><a href="###">新闻公告</a></li>
-				<li class=""><a href="###">游戏攻略</a></li>
-			</ul>
-		</div>
-		<div class="tab-td">
-			<div class="col-news dis">
-				<ul>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯很长很长最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
-				</ul>
-				<a href="###" class="more">查看更多&gt</a>
-			</div>
-			<div class="col-news">
-				<ul>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
-				</ul>
-				<a href="###" class="more">查看更多&gt</a>
-			</div>
-			<div class="col-news">
-				<ul>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
-				</ul>
-				<a href="###" class="more">查看更多&gt</a>
-			</div>
-			<div class="col-news">
-				<ul>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
-					<li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
-				</ul>
-				<a href="###" class="more">查看更多&gt</a>
-			</div>
-		</div>
-	</div>
-
-	<script type="text/javascript">
-		window.onload=function () {
-			var hd_li = $(".tab-hd").find('li');				
-			
-			
-			for(i=0;i<hd_li.length;i++){						
-				hd_li[i].onmouseover=function() {
-					$(".tab-hd ul li").removeClass();
-					this.className = "lihover";
-					var hd_ll=[];
-					var hd_ll=$(".hd_td").find('col-news');
-					$(".hd_td div").removeClass(' dis');
-					hd_ll[i].className+=' dis';
-				}
-			}
-		}
-	</script>
-</div>
-
-<!-- 合作媒体 -->
-<div class="hzmt">
-	<div class="center">
-		<ul>
-			<li><a href="###"><img src="./images/4399.png" width="173" height="36" alt="4399logo" ></a></li>
-			<li><a href="###"><img src="./images/tgbus.png" width="147" height="39" alt="tgbuslogo"></a></li>
-			<li><a href="###"><img src="./images/kdbs.png" width="141" height="48" alt="kdbslogo"></a></li>
-			<li><a href="###"><img src="./images/yxg.png" width="150" height="44" alt="yxglogo"></a></li>
-		</ul>
-	</div>
-	
-</div>
-
+                var c = {
+                    bg: "#333", //右下数字背景颜色
+                    color: "#FFF", //右下数字颜色
+                    cbg: "#FFF", //右下当前数字背景颜色
+                    ccolor: "#333", //右下当前数字颜色
+                    bc: "#ccc", //边框颜色
+                    step: 6000 //步长
+                }
+                new IMGS("TopI", 457, 212, da, c);
+                //new IMGS("id号随便写不要和页面的id重复就可以",宽度,高度,数据[,设置]);
+                </script>
+            </div>
+            <div class="news-list">
+                <ul>
+                    <li>
+                        <span class="news-list-time">2015-5-4</span>
+                        <a href="###">【XXX】这是标题<span class="iconx icon-new"></span></a>
+                    </li>
+                    <li>
+                        <span class="news-list-time">2015-5-4</span>
+                        <a href="###" title="【XXX】这是标题很长很长很长长很长很长长很长很长很长很长很长的标题">【XXX】这是标题很长很长很长长很长很长长很长很长很长很长很长的标题</a>
+                    </li>
+                    <li>
+                        <span class="news-list-time">2015-5-4</span>
+                        <a href="###">【XXX】这是标题<span class="iconx icon-hot"></span></a>
+                    </li>
+                    <li>
+                        <span class="news-list-time">2015-5-4</span>
+                        <a href="###">【XXX】这是标题</a>
+                    </li>
+                    <li>
+                        <span class="news-list-time">2015-5-4</span>
+                        <a href="###">【XXX】这是标题</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 游戏特色 -->
+    <div class="yxts">
+        <div class="center">
+            <ul>
+                <li>
+                    <a href="###"><img src="./images/01.png" alt="ts-logo"></a>
+                </li>
+                <li>
+                    <a href="###"><img src="./images/02.png" alt="ts-logo"></a>
+                </li>
+                <li>
+                    <a href="###"><img src="./images/03.png" alt="ts-logo"></a>
+                </li>
+                <li>
+                    <a href="###"><img src="./images/04.png" alt="ts-logo"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 游戏资讯 -->
+    <div class="yxzx">
+        <div class="center">
+            <div id="tab-hd">
+                <ul id=tab-li>
+                    <li class="lihover"><a href="###">最新资讯</a></li>
+                    <li class=""><a href="###">热门活动</a></li>
+                    <li class=""><a href="###">新闻公告</a></li>
+                    <li class=""><a href="###">游戏攻略</a></li>
+                </ul>
+            </div>
+            <div id="tab-td">
+                <div class="col-news dis">
+                    <ul>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯很长很长最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯最新资讯</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]最新资讯</a></li>
+                    </ul>
+                    <a href="###" class="more">查看更多&gt</a>
+                </div>
+                <div class="col-news">
+                    <ul>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动热门活动</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]热门活动</a></li>
+                    </ul>
+                    <a href="###" class="more">查看更多&gt</a>
+                </div>
+                <div class="col-news">
+                    <ul>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告新闻公告</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]新闻公告</a></li>
+                    </ul>
+                    <a href="###" class="more">查看更多&gt</a>
+                </div>
+                <div class="col-news">
+                    <ul>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略游戏攻略</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
+                        <li><span class="time">2015-05-14</span><a href="###">[XXXX]游戏攻略</a></li>
+                    </ul>
+                    <a href="###" class="more">查看更多&gt</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        
+        var tabs = document.getElementById("tab-li").getElementsByTagName("li");
+        var divs = document.getElementById("tab-td").getElementsByTagName("div");
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].onclick = function(){
+                change(this);
+            };
+        }
+        function change(obj) {
+            for (var i = 0; i < tabs.length; i++) {
+                if (tabs[i] == obj) {
+                    tabs[i].className = "lihover";
+                    divs[i].className = "col-news dis";
+                } else {
+                    tabs[i].className = "";
+                    divs[i].className = "col-news";
+                }
+            }
+        }
+        </script>
+    </div>
+    <!-- 合作媒体 -->
+    <div class="hzmt">
+        <div class="center">
+            <ul>
+                <li>
+                    <a href="###"><img src="./images/4399.png" width="173" height="36" alt="4399logo"></a>
+                </li>
+                <li>
+                    <a href="###"><img src="./images/tgbus.png" width="147" height="39" alt="tgbuslogo"></a>
+                </li>
+                <li>
+                    <a href="###"><img src="./images/kdbs.png" width="141" height="48" alt="kdbslogo"></a>
+                </li>
+                <li>
+                    <a href="###"><img src="./images/yxg.png" width="150" height="44" alt="yxglogo"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>

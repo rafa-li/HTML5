@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	固定层效果</title>
+</head>
+<body>
+	<div>
+		absolute与fixed的相同点：
+			第一，完全脱离标准文档流
+			第二，未设置偏移量时，都定位在父元素的左上角
+				偏移量--元素定位（相对或绝对）后就具有偏移属性和堆叠属性（z-index）
+
+		absolute和fixed的不同点
+			absolute
+			1，无已定位祖先元素，以 《html》为基准偏移
+			2，有已定位祖先元素，已距其最近的、已定位的祖先元素为基准偏移
+			fixed
+			1，有、无已定位祖先元素，都以浏览器可视窗口为基准偏移
+	</div>
+</body>
+</html>

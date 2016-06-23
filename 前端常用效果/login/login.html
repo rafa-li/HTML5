@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh"	>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>login</title>
+
+	<link rel="stylesheet" type="text/css" href="login.css">
+	
+	<!--[if lt IE 9]>
+	<!--	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+	<!--[endif]-->
+	
+</head>
+
+<body>
+
+	<div id="login">
+		<h2><span class="fontawesome-lock"></span>登录</h2>
+		<form action="javascript:void(0);" method="POST">
+			<fieldset style="width:73px;text-align=center;">
+				<table>
+				<p>
+				<label for="email">用户名：</label>
+				<input type="email" id="email" value="请输入邮箱登录" onBlur="if(this.value=='')this.value='请输入邮箱登录'" onFocus="if(this.value=='请输入邮箱登录')this.value=''">
+				</p>
+				<!-- JS because of IE support; better:placeholder="mail@address.com" -->
+				<p>
+				<label for="password">密码：</label>
+				<input type="password" id="password" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''">
+				</p>
+				<!-- JS because of IE support; better: placeholder="password" -->
+				</table>
+				<p>
+			<!--	<span style="width:50px;"></span> -->
+				<input type="submit" value="登录" id="1">
+				&nbsp;&nbsp;
+				<input type="submit" value="取消" id="2">
+				</p>
+
+			</fieldset>
+
+		</form>
+
+	</div> <!-- end login -->
+	
+</body>	
+</html>

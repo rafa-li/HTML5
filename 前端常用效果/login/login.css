@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+html{
+	background-color:#E9EEF0;
+}
+
+body {
+	background-color: #C0C0C0;
+	color: #98FB98;
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 0 auto;
+	width: 400px;
+}
+ 
+#login h2 {
+	background-color: #7CFC00;
+	-webkit-border-radius: 20px 20px 0 0;/*webkit 内核浏览器支持扩展*/
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #7CFC00;
+	font-size: 28px;
+	padding: 20px 26px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+	margin-right: 14px;/*右侧浮动*/
+}
+
+#login fieldset {
+	background-color: #00FFFF;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 26px 26px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0 auto;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 26px;
+	width: 32px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #33cc77;
+	color: #fff;
+	float:left;
+	margin: 0 auto ;
+	padding: 4px 0;
+	width: 100px;
+}
+/*
+#login fieldset input@charset "utf-8";
+
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+	background-color: #C0C0C0;
+	color: #000;
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+/* ---------- LOGIN ---------- */
+/*
+#login {
+	margin: 150px auto;
+	width: 400px;
+}
+
+#login h2 {
+	background-color: #90EE90;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #FFF;
+	font-size: 28px;
+	padding: 20px 20px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
+}
+
+#login fieldset {
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#1 {
+	background-color: #33cc77;
+	color: #fff;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+	float:left;
+}
+
+#2 {
+	background-color: #33cc77;
+	color: #fff;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+	float:right;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: #28ad63;
+}

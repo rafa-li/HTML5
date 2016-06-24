@@ -7,42 +7,115 @@
     <style>
     * {
         padding: 0;
-        margin: 0px;
+        margin: 0;
     }
-    body{
-    	background: #ccc;
+    
+    body {
+        background: #ccc;
     }
-    #login-box{
-    	width: 375px;
-    	height: 470px;
-    	background-color: #fff;
-    	margin: 30px auto;
-		border: 1px solid red;
+    
+    a {
+        text-decoration: none
     }
-    #login-box h3{
-    	color: #ff9500;
-    	font-size: 26px;
-    	height: 57px;
-    	line-height: 57px;
-    	font-weight: 400;
-    	padding: 0 30px;
-
+    
+    #login-box {
+        width: 375px;
+        height: 470px;
+        background-color: #fff;
+        margin: 30px auto;
+        border: 1px solid red;
+        position: relative;
     }
-    .login-info{
-    	padding: 0 30px;	
+    
+    #login-box h3 {
+        color: #ff9500;
+        font-size: 26px;
+        height: 57px;
+        line-height: 57px;
+        font-weight: 400;
+        padding: 0 30px;
     }
-    .login-form{
-    	margin-bottom: 20px;
-		border-radius: 2px;
+    
+    .login-info {
+        padding: 0 30px;
     }
+    
+    .login-form {
+        margin-bottom: 20px;
+        border-radius: 2px;
+    }
+    
     .tel,
     .pw {
         width: 310px;
         height: 48px;
+        border: 1px solid #C6C5C5;
+        border-radius: 2px;
+        font-size: 16px;
     }
+    
     .id-code {
-        width: 130px;
+        width: 128px;
         height: 48px;
+        border: 1px solid #C6C5C5;
+        border-radius: 2px;
+    }
+    
+    .get-id {
+        display: block;
+        width: 170px;
+        height: 48px;
+        line-height: 50px;
+        float: right;
+        margin-right: 3px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        text-align: center;
+        background-color: #e9f1f5;
+        color: #3d9ccc;
+    }
+    
+    .free-rg {
+        display: block;
+        width: 310px;
+        height: 58px;
+        line-height: 60px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        text-align: center;
+        background-color: #ff9500;
+        color: #fff;
+        font-size: 24px;
+    }
+    
+    .checked {
+        width: 310px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 14px;
+        color: #666;
+        margin-top: 20px;
+    }
+    
+    .checkbox {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .go-login {
+        width: 370px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        
+        background-color: #f8f8f8;
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+    }
+    .go-login a{	
+    	color: #0088bb;
     }
     </style>
 </head>
@@ -51,23 +124,31 @@
     <div id="login-box">
         <h3>10秒注册,获得高薪</h3>
         <form action="" class="login-info">
-            <p class="login-form">
-                <input type="text" class="tel">
-            </p>
-            <p class="login-form">
-                <input type="text" class="pw">
-            </p>
-            <p class="login-form">
+            <div class="login-form">
+                <input type="text"  class="tel" style="color:gray" value="手机号" onfocus="if(this.value=='手机号'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='手机号'){this.value='手机号'};this.style.color='gray';">
+
+            </div>
+            <div class="login-form">
+                <input type="text" class="pw"  style="color:gray" value="密码（6-16字母、数字，无空格）" onfocus="if(this.value=='密码（6-16字母、数字，无空格）'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='密码（6-16字母、数字，无空格）'){this.value='密码（6-16字母、数字，无空格）'};this.style.color='gray';">
+            </div>
+            <div class="login-form">
                 <input type="text" class="id-code">
-                <a href="">获取验证码</a>
-            </p>
-            <a href="" class="free-rg">免费注册</a>
-            <input type="checkbox" class="checkbox"><span>我已阅读并同意</span><a href="">《用户服务协议》</a>
+                <a href="" class="get-id">获取验证码</a>
+            </div>
+            <div>
+                <a href="" class="free-rg">免费注册</a>
+            </div>
+            <div class="checked">
+                <input type="checkbox" class="checkbox"><span>我已阅读并同意</span><a href="">《用户服务协议》
+            </div>
         </form>
-        <div>
-            已有账号？直接<a href="">登录&gt&gt</a>
-        </div>
+        <div class="go-login">
+        	<span>
+            已有账号？直接</span><a href="">登录&gt&gt</a>
+            </div>
+
     </div>
+    
 </body>
 
 </html>

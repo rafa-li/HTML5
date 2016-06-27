@@ -15,6 +15,51 @@ body ,ul,li,h3,p,a,input{margin: 0;padding: 0px;font-family: "Microsoft YaHei"}
 	width: 300px;
 	height: 50px;
 	float: left;
+	position: relative;
+}
+.logo-img a:first-child{
+	display: inline-block;
+	vertical-align: middle;
+	width: 249px;
+	height: 40px;
+	background:url("./img/logo-fiveweekyear_logo.png") no-repeat left;
+	margin:5px 0;
+	padding-right: 30px;
+}
+.logo-img a em{
+	visibility: hidden;
+	position: absolute;
+	width: 16px;
+	height: 20px;
+	background-color: #838b8f;
+	padding: 0 4px 2px; 
+	right: 26px;
+	top: 5px;
+	font-style: normal;
+	border-radius: 3px 3px 3px 0;
+}
+.logo-img a em:after{
+	content: '';
+    position: absolute;
+    left: -4px;
+    bottom: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    border-right-color: #838b8f;
+    border-bottom-color: #838b8f;
+}
+.icons16-home-white{
+	display: inline-block;
+	overflow: hidden;
+	background: url("./img/icons16.png") no-repeat 0 -192px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin-top: 3px;
+}
+.logo-img a:hover em{
+	visibility: visible;
 }
 .link-menu-list{
 	width: 305px;
@@ -33,12 +78,25 @@ body ,ul,li,h3,p,a,input{margin: 0;padding: 0px;font-family: "Microsoft YaHei"}
 .link-menu-list a:hover{
 	color: #fff;
 }
+.link-menu-list a:hover .icons16-mobile-gray{
+	background-position: 0 -384px;
+}
 .link-menu-list .spliter{
 	display: inline-block;
     margin: 0 3px;
     height: 16px;
     border-left: 1px dotted #7b7c7d;
     vertical-align: middle;
+}
+.icons16-mobile-gray{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin-top: -1px;
+	margin-right: .3em;
+	background: url("./img/icons16.png") no-repeat 0 -368px;
 }
 
 #container {
@@ -150,6 +208,7 @@ body ,ul,li,h3,p,a,input{margin: 0;padding: 0px;font-family: "Microsoft YaHei"}
     border: 1px solid #C6C5C5;
     border-radius: 2px;
     font-size: 16px;
+    text-indent: 8px;
 }
 
 .id-code {
@@ -157,6 +216,8 @@ body ,ul,li,h3,p,a,input{margin: 0;padding: 0px;font-family: "Microsoft YaHei"}
     height: 46px;
     border: 1px solid #C6C5C5;
     border-radius: 2px;
+    text-indent: 8px;
+    font-size: 16px;
 }
 
 .get-id {

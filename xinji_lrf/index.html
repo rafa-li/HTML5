@@ -190,11 +190,22 @@
             </div>
         </div>
         <script type="text/javascript">
+        // $( function () {
+        //     var $div_li = $("div#tab-hd ul li");
+        //     $div_li.mouseover(function() {
+        //         $(this).addClass('lihover')
+        //                .siblings().removeClass('lihover');
+        //         var index = $div_li.index(this);
+        //         $("div#tab-td > div").eq(index).addClass('dis')
+        //                            .siblings().removeClass('dis');
+        //     });  
+        // });
+           
         
         var tabs = document.getElementById("tab-li").getElementsByTagName("li");
         var divs = document.getElementById("tab-td").getElementsByTagName("div");
         for (var i = 0; i < tabs.length; i++) {
-            tabs[i].onclick = function(){
+            tabs[i].onmouseover = function(){
                 change(this);
             };
         }
